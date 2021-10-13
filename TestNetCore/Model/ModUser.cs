@@ -11,17 +11,20 @@ namespace TestNetCore.Model
         public int pageSize { get; set; }
         public int totalPage { get; set; }
         public string totalApa { get; set; }
-        public IList<ModUser> data { get; set; } = new List<ModUser>();
+        public IList<mfn_user> data { get; set; } = new List<mfn_user>();
     }
 
-    public class ModUser
+
+    public class mfn_user
     {
+        public long Id { get; set; }
         public string username { get; set; }
         public string password { get; set; }
         public string erp_user_id { get; set; }
         public string roles_id { get; set; }
         public string organization_id { get; set; }
         public string is_tmm { get; set; }
+        public string is_login_mobile { get; set; }
         public string fcm_token { get; set; }
         public string nik { get; set; }
         public string full_name { get; set; }
@@ -30,6 +33,7 @@ namespace TestNetCore.Model
         public string image_url { get; set; }
         public string bank_name { get; set; }
         public string bank_account { get; set; }
+        public string has_npwp { get; set; }
         public string address { get; set; }
         public string is_active { get; set; }
         public string created_by { get; set; }
